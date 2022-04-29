@@ -49,7 +49,7 @@ public class MenuUIHandler : MonoBehaviour
     public void Menu()
     {
         SceneManager.LoadScene(0);
-        Score.Instance.SaveStat();
+      Score.Instance.SaveStat();
     }
     public void Back()
     {

@@ -41,7 +41,7 @@ public class Score : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        //LoadStat();
+       LoadStat();
      }
     [System.Serializable]
     class SaveData
@@ -63,7 +63,7 @@ public class Score : MonoBehaviour
         SaveData data = new SaveData();
         data.dplayer1 = stat[0].name;
         data.dplayer2 = stat[1].name;
-        data.dplayer3 = stat[2].name; 
+        data.dplayer3 = stat[2].name;
         data.dplayer4 = stat[3].name;
         data.dplayer5 = stat[4].name;
         data.scorePlayer1 = stat[0].scorePlayer;
@@ -141,7 +141,7 @@ public class Score : MonoBehaviour
         iplayer3 = $"3 :{stat[2].name} {stat[2].scorePlayer}";
         iplayer4 = $"4 :{stat[3].name} {stat[3].scorePlayer}";
         iplayer5 = $"5 :{stat[4].name} {stat[4].scorePlayer}";
-        SaveStat();
+       SaveStat();
     }
     public string getBestPlayer()
     {
